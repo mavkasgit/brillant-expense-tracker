@@ -30,6 +30,9 @@ jobs:
       run: npm run type-check
       continue-on-error: true
     
+    - name: Run format
+      run: npm run format
+    
     - name: Build application
       run: npm run build
       env:
